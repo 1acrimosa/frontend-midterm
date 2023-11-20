@@ -5,7 +5,6 @@
     <title>News Page</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">-->
 </head>
 <body>
 
@@ -22,12 +21,11 @@
 <header>
     <div class="header-box">
         <div class="header-logo">
-<!--            <img src="media/logop.png" alt="logo">-->
             <a href="index.html"><h1>NEWS</h1></a>
         </div>
         <div class="header-search">
             <input type="text" id="input-box" placeholder="Type here..." autocomplete="off">
-            <button><svg class="svg_" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></button>
+            <button><svg class="svg_" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></button>
         </div>
         <div class="result-box"></div>
         <div class="header-list">
@@ -48,78 +46,69 @@
 
 <!--      MAIN      -->
 
-<!--data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false }'-->
 <div class="container" id="content">
 
     <div class="row">
+        <div class="mockup">
 <!---->
-        <div class="carousel">
-            <div class="slider">
-                <img id="slide-1" src="media/news12.jpg">
-                <img id="slide-2" src="media/news19.jpg">
-                <img id="slide-3" src="media/news10.jpg">
-                <img id="slide-4" src="media/news11.jpg">
+            <div class="carousel">
+                <div class="slider">
+                    <img id="slide-1" src="media/news12.jpg">
+                    <img id="slide-2" src="media/news19.jpg">
+                    <img id="slide-3" src="media/news10.jpg">
+                    <img id="slide-4" src="media/news11.jpg">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                    <a href="#slide-4"></a>
+                </div>
             </div>
-            <div class="slider-nav">
-                <a href="#slide-1"></a>
-                <a href="#slide-2"></a>
-                <a href="#slide-3"></a>
-                <a href="#slide-4"></a>
-            </div>
-        </div>
 <!---->
 
-        <div class="search-box">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-            </svg>
-            <input type="text" placeholder="KASKELEN">
-            <button>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            <div class="search-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
                 </svg>
-            </button>
-            <div class="weather-details">
-                <div class="humidity">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-water" viewBox="0 0 16 16">
-                        <path d="M.036 3.314a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 3.964a.5.5 0 0 1-.278-.65zm0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 6.964a.5.5 0 0 1-.278-.65zm0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 9.964a.5.5 0 0 1-.278-.65zm0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65z"/>
+                <input type="text" placeholder="Search City...">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                     </svg>
-                    <div class="text">
-                        <span></span>
-                        <p>Humidity</p>
-                        <h5>12º</h5>
+                </button>
+                <div class="weather-details">
+                    <div class="humidity">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-water" viewBox="0 0 16 16">
+                            <path d="M.036 3.314a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 3.964a.5.5 0 0 1-.278-.65zm0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 6.964a.5.5 0 0 1-.278-.65zm0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 9.964a.5.5 0 0 1-.278-.65zm0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65z"/>
+                        </svg> -->
+                        <img src="media/clear.png" width="20px" height="20px" alt="">
+                        <div class="text">
+                            <span></span>
+                            <p>Humidity</p>
+                            <h5>12º</h5>
+                        </div>
+                    </div>
+                    <div class="wind">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wind" viewBox="0 0 16 16">
+                            <path d="M12.5 2A2.5 2.5 0 0 0 10 4.5a.5.5 0 0 1-1 0A3.5 3.5 0 1 1 12.5 8H.5a.5.5 0 0 1 0-1h12a2.5 2.5 0 0 0 0-5zm-7 1a1 1 0 0 0-1 1 .5.5 0 0 1-1 0 2 2 0 1 1 2 2h-5a.5.5 0 0 1 0-1h5a1 1 0 0 0 0-2zM0 9.5A.5.5 0 0 1 .5 9h10.042a3 3 0 1 1-3 3 .5.5 0 0 1 1 0 2 2 0 1 0 2-2H.5a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                        <div class="text">
+                            <span></span>
+                            <p>Wind Speed</p>
+                        </div>
                     </div>
                 </div>
-                <div class="wind">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wind" viewBox="0 0 16 16">
-                        <path d="M12.5 2A2.5 2.5 0 0 0 10 4.5a.5.5 0 0 1-1 0A3.5 3.5 0 1 1 12.5 8H.5a.5.5 0 0 1 0-1h12a2.5 2.5 0 0 0 0-5zm-7 1a1 1 0 0 0-1 1 .5.5 0 0 1-1 0 2 2 0 1 1 2 2h-5a.5.5 0 0 1 0-1h5a1 1 0 0 0 0-2zM0 9.5A.5.5 0 0 1 .5 9h10.042a3 3 0 1 1-3 3 .5.5 0 0 1 1 0 2 2 0 1 0 2-2H.5a.5.5 0 0 1-.5-.5z"/>
-                    </svg>
-                    <div class="text">
-                        <span></span>
-                        <p>Wind Speed</p>
-                        <h5>27 Km/H</h5>
-                    </div>
-                </div>
+
+                <video controls autoplay muted loop>
+                    <source src="media/news.mp4" type="video/mp4">
+                </video>
+
             </div>
-<!--            <div class="not-found">-->
-<!--                <img src="media/404.png">-->
-<!--                <p>Just look outside. :)</p>-->
-<!--            </div>-->
-
-<!--            <div class="weather-box">-->
-<!--                <img src="">-->
-<!--                <p class="temperature"></p>-->
-<!--                <p class="description"></p>-->
-<!--            </div>-->
-
-            <video controls autoplay muted loop>
-                <source src="media/news.mp4" type="video/mp4">
-            </video>
-
         </div>
 
 <!---->
-        <div class="card" style="width: 18rem;">
+        <div class="card">
             <img src="media/news1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Sport Stars</h5>
@@ -127,7 +116,7 @@
                 <a href="news/news1.html" class="btn btn-primary">Go to the news</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card">
             <img src="media/news2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Our Earth</h5>
@@ -135,7 +124,7 @@
                 <a href="news/news2.html" class="btn btn-primary">Go to the news</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card">
             <img src="media/news3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Factory and it's harm</h5>
@@ -143,7 +132,7 @@
                 <a href="news/news3.html" class="btn btn-primary">Go to the news</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card">
             <img src="media/news4.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Politics want freedom</h5>
@@ -151,7 +140,7 @@
                 <a href="news/news4.html" class="btn btn-primary">Go to the news</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card">
             <img src="media/news5.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Caspian Sea</h5>
@@ -159,7 +148,7 @@
                 <a href="news/news5.html" class="btn btn-primary">Go to the news</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card">
             <img src="media/news6.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Turkish Hospital</h5>
@@ -167,7 +156,7 @@
                 <a href="news/news6.html" class="btn btn-primary">Go to the news</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card">
             <img src="media/news7.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Tourism</h5>
@@ -175,7 +164,7 @@
                 <a href="news/news7.html" class="btn btn-primary">Go to the news</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card">
             <img src="media/news8.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Fast Trains</h5>
@@ -183,7 +172,7 @@
                 <a href="news/news8.html" class="btn btn-primary">Go to the news</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card">
             <img src="media/news9.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Plain ticket price</h5>
@@ -191,7 +180,7 @@
                 <a href="news/news9.html" class="btn btn-primary">Go to the news</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card">
             <img src="media/news10.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Hockey Game</h5>
@@ -199,7 +188,7 @@
                 <a href="news/news10.html" class="btn btn-primary">Go to the news</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card">
             <img src="media/news11.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Archeology Finds</h5>
@@ -207,7 +196,7 @@
                 <a href="news/news11.html" class="btn btn-primary">Go to the news</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card">
             <img src="media/news12.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">AI OpenAI</h5>
@@ -215,7 +204,7 @@
                 <a href="news/news12.html" class="btn btn-primary">Go to the news</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card">
             <img src="media/news13.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">WARNING! SHARKS</h5>
@@ -223,7 +212,7 @@
                 <a href="news/news13.html" class="btn btn-primary">Go to the news</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card">
             <img src="media/news14.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">YUMMY AND TASTY</h5>
@@ -231,7 +220,7 @@
                 <a href="news/news14.html" class="btn btn-primary">Go to the news</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card">
             <img src="media/news15.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">COVID-19 VACCINE</h5>
@@ -239,7 +228,7 @@
                 <a href="news/news15.html" class="btn btn-primary">Go to the news</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card">
             <img src="media/news16.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Best barber ever said...</h5>
@@ -247,7 +236,7 @@
                 <a href="news/news16.html" class="btn btn-primary">Go to the news</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card">
             <img src="media/news17.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Modern design of the...</h5>
@@ -255,7 +244,7 @@
                 <a href="news/news17.html" class="btn btn-primary">Go to the news</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card">
             <img src="media/news18.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Biden said...</h5>
@@ -263,7 +252,7 @@
                 <a href="news/news18.html" class="btn btn-primary">Go to the news</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card">
             <img src="media/news19.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Someone counted all stars</h5>
@@ -271,7 +260,7 @@
                 <a href="news/news19.html" class="btn btn-primary">Go to the news</a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card">
             <img src="media/news20.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Sharks in LA</h5>
@@ -279,6 +268,40 @@
                 <a href="news/news20.html" class="btn btn-primary">Go to the news</a>
             </div>
         </div>
+
+    </div>
+
+    <div class="mini-row">
+    <div class="mini-carousel">
+        <div class="mini-slider">
+            <img id="mslide-1" src="media/news1.jpg">
+            <img id="mslide-2" src="media/news2.jpg">
+            <img id="mslide-3" src="media/news3.jpg">
+            <img id="mslide-4" src="media/news4.jpg">
+            <img id="mslide-5" src="media/news5.jpg">
+            <img id="mslide-6" src="media/news6.jpg">
+            <img id="mslide-7" src="media/news7.jpg">
+            <img id="mslide-8" src="media/news8.jpg">
+            <img id="mslide-9" src="media/news9.jpg">
+            <img id="mslide-10" src="media/news10.jpg">
+            <img id="mslide-11" src="media/news12.jpg">
+            <img id="mslide-12" src="media/news13.jpg">
+        </div>
+        <div class="mini-slider-nav">
+            <a href="#mslide-1"></a>
+            <a href="#mslide-2"></a>
+            <a href="#mslide-3"></a>
+            <a href="#mslide-4"></a>
+            <a href="#mslide-5"></a>
+            <a href="#mslide-6"></a>
+            <a href="#mslide-7"></a>
+            <a href="#mslide-8"></a>
+            <a href="#mslide-9"></a>
+            <a href="#mslide-10"></a>
+            <a href="#mslide-11"></a>
+            <a href="#mslide-12"></a>
+        </div>
+    </div>
     </div>
 </div>
 
@@ -313,8 +336,13 @@
 <!--      SCRIPT      -->
 
 <script src="script.js"></script>
+<script src="carousel.js"></script>
+<script src="search.js"></script>
+<script src="weather.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 <!--      /SCRIPT     -->
+
 </body>
 </html>
