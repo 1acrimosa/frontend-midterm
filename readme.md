@@ -1,6 +1,6 @@
-# My News Website ( Midterm Project )
+# News Website ( Midterm Project )
 
-Welcome to the official documentation for My News Website! This document provides an overview of the features and instructions on how to run the website locally.
+Welcome to the official documentation for News Website! This document provides an overview of the features and instructions on how to run the website locally.
 
 ## Features
 
